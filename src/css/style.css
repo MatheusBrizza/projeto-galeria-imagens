@@ -1,0 +1,37 @@
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: aquamarine;
+}
+
+h1 {
+    padding-bottom: 20px;
+}
+
+section {
+    display: flex;
+    width: 1000px;
+    height: 600px;
+}
+
+section img {
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+
+section img:hover {
+    cursor: crosshair;
+    width: 650px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+.image-5 {
+    background-color: aquamarine;
+}
